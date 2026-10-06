@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI CALCULATOR</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.vectorstock.com/i/1000v/57/58/bmi-body-mass-index-calculator-icon-vector-44405758.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body
+    style="
+      font-family: &quot;Courier New&quot;, Courier, monospace;
+      font-weight: bolder;
+      background-color: rgb(231, 235, 237);
+    "
+  >
+    <div style="height: 55vh" class="d-flex justify-content-center m-5">
+      <div class="border border-5 border-info p-5">
+        <h1 class="text-primary">BMI CALCULATOR</h1>
+        <div class="d-flex justify-content-center m-4">
+          <form class="text-danger">
+            <label for="ht">HEIGHT :</label>
+            <input
+              id="ht"
+              placeholder="cm"
+              type="text"
+              class="form-control"
+              id="ht"
+            /><br />
+
+            <label for="wt">WEIGHT :</label>
+            <input
+              id="wt"
+              placeholder="m"
+              type="text"
+              class="form-control"
+              id="wt"
+            />
+          </form>
+        </div>
+        <div class="d-flex justify-content-center m-4">
+          <button
+            onclick="onCalBtnClick()"
+            class="btn btn-outline-primary m-2 p-2 w-75"
+          >
+            CALCULATE
+          </button>
+          <button
+            onclick="onClearBtnClick()"
+            class="btn btn-outline-primary m-2 p-2"
+          >
+            CLEAR
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-danger">
+      <h3 class="d-flex justify-content-center m-4">CALCULATED VALUE</h3>
+      <div class="d-block d-flex justify-content-center m-4">
+        <input id="val" type="text" name="" id="" />
+      </div>
+      <h3 class="d-flex justify-content-center m-4">CATEGORY</h3>
+      <div class="d-block d-flex justify-content-center m-4">
+        <input id="category" type="text" name="" id="" />
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
